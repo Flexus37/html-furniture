@@ -550,16 +550,16 @@ nav {
 
 /* Additional Info */
 .additional-info {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
 	width: 100%;
-}
-
-.additional-info__section {
-	margin-bottom: 4rem;
 }
 
 .additional-info__title {
 	font-size: 2.4rem;
 	font-weight: bold;
+	margin-top: 0;
 	margin-bottom: 1.1rem;
 }
 
@@ -662,10 +662,20 @@ nav {
 	justify-content: space-between;
 }
 
+.footer__bottom-item p {
+	line-height: 2.2rem;
+}
+
 .footer__socials {
 	display: flex;
 	align-items: center;
 	gap: 3rem;
+}
+
+.footer__socials a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .footer__socials img {
