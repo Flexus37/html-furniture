@@ -335,9 +335,19 @@ nav {
 
 .products__filters {
 	display: flex;
-	gap: 1rem;
+	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 2rem;
+}
+
+.products__filters-item {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.products__filters-item p {
+	font-size: 1.2rem;
 }
 
 .products__filters-btn {
