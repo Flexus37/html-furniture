@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natura</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+	<!-- Header -->
+		<header>
+			<div class="container">
+				<div class="header__inner">
+					<div class="logo">
+						<img src="./assets/logo.svg" alt="Логотип компании">
+					</div>
+					<nav>
+						<ul class="nav__links">
+							<li>
+								<img src="./assets/header/living-room.svg" alt="">
+								<a href="#">Гостиная</a>
+							</li>
+							<li>
+								<img src="./assets/header/kitchen.svg" alt="">
+								<a href="#">Кухня</a>
+							</li>
+							<li>
+								<img src="./assets/header/kids.svg" alt="">
+								<a href="#">Детская</a>
+							</li>
+							<li>
+								<img src="./assets/header/bathroom.svg" alt="">
+								<a href="#">Ванная</a>
+							</li>
+							<li>
+								<img src="./assets/header/bedroom.svg" alt="">
+								<a href="#">Спальня</a>
+							</li>
+						</ul>
+
+						<ul class='nav__actions'>
+							<li>
+								<a href="#">
+									<img src="./assets/header/search.svg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="./assets/header/favorite.svg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="./assets/header/group.svg" alt="">
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<!-- Основная часть -->
+    <main>
+			<div class="container">
+				<div class="main__wrapper">
+
+					<!-- Фильтры -->
+					<aside class="filters">
+						<a href='#' class='filters__all'>Все товары</a>
+
+						<div class="filters__inner">
+							<div class="filters__item">
+								<h3>Вид ткани</h3>
+								<ul class="filter__list">
+									<li>
+										<label>
+											<input type="checkbox" name="size" value="1,5 сп">
+											Бязь<span class="count">3</span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" name="size" value="2 сп" checked>
+											Сатин<span class="count">9</span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" name="size" value="Евро">
+											Поплин<span class="count">1</span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" name="size" value="Семейный">
+											Ранфорс<span class="count">34</span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" name="size" value="Семейный">
+											Перкаль<span class="count">9</span>
+										</label>
+									</li>
+								</ul>
+							</div>
+
+							<div class="filters__item">
+								<h3>Размер</h3>
+								<ul class="filter__list">
+									<li>
+										<label>
+											<input type="checkbox" name="size" value="1,5 сп">
+											1,5 сп<span class="count">3</span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" name="size" value="2 сп" checked>
+											2 сп<span class="count">9</span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" name="size" value="Евро">
+											Евро<span class="count">1</span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" name="size" value="Семейный">
+											Семейный<span class="count">34</span>
+										</label>
+									</li>
+								</ul>
+							</div>
+
+							<div class="filters__item">
+								<h3>Дизайн</h3>
+								<ul class="filter__list">
+									<li>
+										<label>
+											<input type="checkbox" name="size" value="1,5 сп">
+											Цветы<span class="count">3</span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" name="size" value="2 сп" checked>
+											Геометрия<span class="count">9</span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" name="size" value="Евро">
+											Абстракция<span class="count">1</span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" name="size" value="Семейный">
+											Animal<span class="count">34</span>
+										</label>
+									</li>
+								</ul>
+							</div>
+
+							<div class="filters__item">
+								<h3>Тип</h3>
+								<ul class="filter__list">
+									<li>
+										<label>
+											<input type="checkbox" name="size" value="1,5 сп">
+											Комплект<span class="count">3</span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" name="size" value="2 сп" checked>
+											Пододеяльник<span class="count">9</span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" name="size" value="Евро">
+											Простыня<span class="count">1</span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" name="size" value="Семейный">
+											Комплект наволочек<span class="count">34</span>
+										</label>
+									</li>
+								</ul>
+							</div>
+
+							<div class="filters__item">
+								<h3>Цвет</h3>
+								<ul class="filter__list filter__list--colors">
+								<li>
+										<label>
+											<input type="checkbox" name="color" value="white">
+											Белый<span class="count">3</span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" name="color" value="peach" checked>
+											Персиковый<span class="count">9</span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" name="color" value="blue">
+											Простыня<span class="count">1</span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" name="color" value="yellow">
+											Желтый<span class="count">34</span>
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</aside>
+
+					<section class='products'>
+
+						<!-- Хлебные крошки (ссылки) -->
+						<nav class="breadcrumbs">
+							<ul>
+								<li><a href="#">Главная</a></li>
+								<span>/</span>
+								<li><a href="#">Каталог</a></li>
+								<span>/</span>
+								<li><a href="#">Спальня</a></li>
+								<span>/</span>
+								<li>Постельное бельё</li>
+							</ul>
+						</nav>
+
+						<!-- Нащвание -->
+						<div class='products__title'>
+							<h1>Постельное бельё</h1>
+							<img src="./assets/bed.svg" alt="">
+						</div>
+
+						<!-- Описание -->
+						<p class='products__description'>Правомочен микрохроматический интервал традиционно трансформирует комплексный голос, что несомненно приведет нас к истине вектор переворачивает аккорд. Скачок функции, как бы это ни казалось парадоксальным, начинает голос наибольшее и наименьшее значения функции вызывает ряд тейлора. Сумма ряда концентрирует миксолидийский нонаккорд, что и требовалось доказать.</p>
+
+
+						<div class="products__filters">
+							<button class='products__filters-btn'>По популярности</button>
+							<button class='products__filters-btn active'>Материал</button>
+							<button class='products__filters-btn'>Размер</button>
+						</div>
+
+						<!-- Список продукции -->
+						<div class="products__list">
+
+							<div class="products__item">
+								<div class='products__img-wrapper'>
+									<img class='products__img' src="/assets/products/1.png" alt="КПБ 'Мальва'">
+									<div class="products__carousel-wrapper">
+										<div class="products__carousel">
+											<span></span>
+											<span></span>
+											<span class='active'></span>
+											<span></span>
+										</div>
+									</div>
+								</div>
+								<button class='products__item-favorite'>
+									<div>
+										<img src="./assets/products/favorite.svg" alt="Добавить в избранное">
+									</div>
+								</button>
+								<div class='products__item-info'>
+									<p class='products__item-name'>КПБ «Мальва»</p>
+									<p class='products__item-code'>Рис. 5676</p>
+								</div>
+							</div>
+
+							<div class="products__item">
+								<div class='products__img-wrapper'>
+									<img class='products__img' src="/assets/products/2.png" alt="КПБ 'Мальва'">
+									<div class="products__carousel-wrapper">
+										<div class="products__carousel">
+											<span></span>
+											<span></span>
+											<span class='active'></span>
+											<span></span>
+										</div>
+									</div>
+								</div>
+								<button class='products__item-favorite'>
+									<div>
+										<img src="./assets/products/favorite.svg" alt="Добавить в избранное">
+									</div>
+								</button>
+								<div class='products__item-info'>
+									<p class='products__item-name'>КПБ «Мальва»</p>
+									<p class='products__item-code'>Рис. 5676</p>
+								</div>
+							</div>
+
+							<div class="products__item">
+								<div class='products__img-wrapper'>
+									<img class='products__img' src="/assets/products/3.png" alt="КПБ 'Мальва'">
+									<div class="products__carousel-wrapper">
+										<div class="products__carousel">
+											<span></span>
+											<span></span>
+											<span class='active'></span>
+											<span></span>
+										</div>
+									</div>
+								</div>
+								<button class='products__item-favorite'>
+									<div>
+										<img src="./assets/products/favorite.svg" alt="Добавить в избранное">
+									</div>
+								</button>
+								<div class='products__item-info'>
+									<p class='products__item-name'>КПБ «Мальва»</p>
+									<p class='products__item-code'>Рис. 5676</p>
+								</div>
+							</div>
+
+							<div class="products__item">
+								<div class='products__img-wrapper'>
+									<img class='products__img' src="/assets/products/4.png" alt="КПБ 'Мальва'">
+									<div class="products__carousel-wrapper">
+										<div class="products__carousel">
+											<span></span>
+											<span></span>
+											<span class='active'></span>
+											<span></span>
+										</div>
+									</div>
+								</div>
+								<button class='products__item-favorite'>
+									<div>
+										<img src="./assets/products/favorite.svg" alt="Добавить в избранное">
+									</div>
+								</button>
+								<div class='products__item-info'>
+									<p class='products__item-name'>КПБ «Мальва»</p>
+									<p class='products__item-code'>Рис. 5676</p>
+								</div>
+							</div>
+
+							<div class="products__item">
+								<div class='products__img-wrapper'>
+									<img class='products__img' src="/assets/products/5.png" alt="КПБ 'Мальва'">
+									<div class="products__carousel-wrapper">
+										<div class="products__carousel">
+											<span></span>
+											<span></span>
+											<span class='active'></span>
+											<span></span>
+										</div>
+									</div>
+								</div>
+								<button class='products__item-favorite'>
+									<div>
+										<img src="./assets/products/favorite.svg" alt="Добавить в избранное">
+									</div>
+								</button>
+								<div class='products__item-info'>
+									<p class='products__item-name'>КПБ «Мальва»</p>
+									<p class='products__item-code'>Рис. 5676</p>
+								</div>
+							</div>
+
+							<div class="products__item">
+								<div class='products__img-wrapper'>
+									<img class='products__img' src="/assets/products/6.png" alt="КПБ 'Мальва'">
+									<div class="products__carousel-wrapper">
+										<div class="products__carousel">
+											<span></span>
+											<span></span>
+											<span class='active'></span>
+											<span></span>
+										</div>
+									</div>
+								</div>
+								<button class='products__item-favorite'>
+									<div>
+										<img src="./assets/products/favorite.svg" alt="Добавить в избранное">
+									</div>
+								</button>
+								<div class='products__item-info'>
+									<p class='products__item-name'>КПБ «Мальва»</p>
+									<p class='products__item-code'>Рис. 5676</p>
+								</div>
+							</div>
+
+							<div class="products__item">
+								<div class='products__img-wrapper'>
+									<img class='products__img' src="/assets/products/7.png" alt="КПБ 'Мальва'">
+									<div class="products__carousel-wrapper">
+										<div class="products__carousel">
+											<span></span>
+											<span></span>
+											<span class='active'></span>
+											<span></span>
+										</div>
+									</div>
+								</div>
+								<button class='products__item-favorite'>
+									<div>
+										<img src="./assets/products/favorite.svg" alt="Добавить в избранное">
+									</div>
+								</button>
+								<div class='products__item-info'>
+									<p class='products__item-name'>КПБ «Мальва»</p>
+									<p class='products__item-code'>Рис. 5676</p>
+								</div>
+							</div>
+
+							<div class="products__item">
+								<div class='products__img-wrapper'>
+									<img class='products__img' src="/assets/products/8.png" alt="КПБ 'Мальва'">
+									<div class="products__carousel-wrapper">
+										<div class="products__carousel">
+											<span></span>
+											<span></span>
+											<span class='active'></span>
+											<span></span>
+										</div>
+									</div>
+								</div>
+								<button class='products__item-favorite'>
+									<div>
+										<img src="./assets/products/favorite.svg" alt="Добавить в избранное">
+									</div>
+								</button>
+								<div class='products__item-info'>
+									<p class='products__item-name'>КПБ «Мальва»</p>
+									<p class='products__item-code'>Рис. 5676</p>
+								</div>
+							</div>
+
+							<div class="products__item">
+								<div class='products__img-wrapper'>
+									<img class='products__img' src="/assets/products/9.png" alt="КПБ 'Мальва'">
+									<div class="products__carousel-wrapper">
+										<div class="products__carousel">
+											<span></span>
+											<span></span>
+											<span class='active'></span>
+											<span></span>
+										</div>
+									</div>
+								</div>
+								<button class='products__item-favorite'>
+									<div>
+										<img src="./assets/products/favorite.svg" alt="Добавить в избранное">
+									</div>
+								</button>
+								<div class='products__item-info'>
+									<p class='products__item-name'>КПБ «Мальва»</p>
+									<p class='products__item-code'>Рис. 5676</p>
+								</div>
+							</div>
+
+							<div class="products__item">
+								<div class='products__img-wrapper'>
+									<img class='products__img' src="/assets/products/10.png" alt="КПБ 'Мальва'">
+									<div class="products__carousel-wrapper">
+										<div class="products__carousel">
+											<span></span>
+											<span></span>
+											<span class='active'></span>
+											<span></span>
+										</div>
+									</div>
+								</div>
+								<button class='products__item-favorite'>
+									<div>
+										<img src="./assets/products/favorite.svg" alt="Добавить в избранное">
+									</div>
+								</button>
+								<div class='products__item-info'>
+									<p class='products__item-name'>КПБ «Мальва»</p>
+									<p class='products__item-code'>Рис. 5676</p>
+								</div>
+							</div>
+
+							<div class="products__item">
+								<div class='products__img-wrapper'>
+									<img class='products__img' src="/assets/products/11.png" alt="КПБ 'Мальва'">
+									<div class="products__carousel-wrapper">
+										<div class="products__carousel">
+											<span></span>
+											<span></span>
+											<span class='active'></span>
+											<span></span>
+										</div>
+									</div>
+								</div>
+								<button class='products__item-favorite'>
+									<div>
+										<img src="./assets/products/favorite.svg" alt="Добавить в избранное">
+									</div>
+								</button>
+								<div class='products__item-info'>
+									<p class='products__item-name'>КПБ «Мальва»</p>
+									<p class='products__item-code'>Рис. 5676</p>
+								</div>
+							</div>
+
+							<div class="products__item">
+								<div class='products__img-wrapper'>
+									<img class='products__img' src="/assets/products/3.png" alt="КПБ 'Мальва'">
+									<div class="products__carousel-wrapper">
+										<div class="products__carousel">
+											<span></span>
+											<span></span>
+											<span class='active'></span>
+											<span></span>
+										</div>
+									</div>
+								</div>
+								<button class='products__item-favorite'>
+									<div>
+										<img src="./assets/products/favorite.svg" alt="Добавить в избранное">
+									</div>
+								</button>
+								<div class='products__item-info'>
+									<p class='products__item-name'>КПБ «Мальва»</p>
+									<p class='products__item-code'>Рис. 5676</p>
+								</div>
+							</div>
+
+						</div>
+
+						<!-- Пагинация -->
+						<div class="pagination">
+							<div class="pagination__item">
+								<button class="pagination__btn pagination__btn--prev">
+									<svg class="icon" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8.33206 13.6641L2 7.332L8.33206 0.999935" stroke="currentColor" stroke-width="1.5"/>
+										<path d="M2.57672 7.33073L15.8165 7.33073" stroke="currentColor" stroke-width="1.5"/>
+									</svg>
+									Назад
+								</button>
+								<button class="pagination__btn">1</button>
+								<button class="pagination__btn">2</button>
+								<button class="pagination__btn active">3</button>
+								<button class="pagination__btn">
+									<svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.104688 1.136C0.104688 0.912 0.190021 0.714667 0.360687 0.544C0.542021 0.373333 0.760688 0.288 1.01669 0.288C1.24069 0.288 1.43802 0.373333 1.60869 0.544C1.77935 0.714667 1.86469 0.912 1.86469 1.136C1.86469 1.392 1.78469 1.61067 1.62469 1.792C1.46469 1.96267 1.26202 2.048 1.01669 2.048C0.760688 2.048 0.542021 1.96267 0.360687 1.792C0.190021 1.61067 0.104688 1.392 0.104688 1.136ZM5.12031 1.136C5.12031 0.912 5.20565 0.714667 5.37631 0.544C5.55765 0.373333 5.77631 0.288 6.03231 0.288C6.25631 0.288 6.45365 0.373333 6.62431 0.544C6.79498 0.714667 6.88031 0.912 6.88031 1.136C6.88031 1.392 6.80031 1.61067 6.64031 1.792C6.48031 1.96267 6.27765 2.048 6.03231 2.048C5.77631 2.048 5.55765 1.96267 5.37631 1.792C5.20565 1.61067 5.12031 1.392 5.12031 1.136ZM10.1359 1.136C10.1359 0.912 10.2213 0.714667 10.3919 0.544C10.5733 0.373333 10.7919 0.288 11.0479 0.288C11.2719 0.288 11.4693 0.373333 11.6399 0.544C11.8106 0.714667 11.8959 0.912 11.8959 1.136C11.8959 1.392 11.8159 1.61067 11.6559 1.792C11.4959 1.96267 11.2933 2.048 11.0479 2.048C10.7919 2.048 10.5733 1.96267 10.3919 1.792C10.2213 1.61067 10.1359 1.392 10.1359 1.136Z" fill="currentColor"/>
+									</svg>
+								</button>
+								<button class="pagination__btn">99</button>
+								<button class="pagination__btn">100</button>
+								<button class="pagination__btn">101</button>
+								<button class="pagination__btn pagination__btn--next">
+									Вперёд
+									<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M7.48441 13.6641L13.8165 7.332L7.4844 0.999935" stroke="currentColor" stroke-width="1.5"/>
+										<path d="M13.2398 7.33073L0 7.33073" stroke="currentColor" stroke-width="1.5"/>
+										</svg>
+								</button>
+							</div>
+							<div class="pagination__item">
+								<div class="pagination__btn pagination__btn-more">Показать ещё</div>
+							</div>
+						</div>
+
+						<!-- Дополнительная информация -->
+						<div class="additional-info">
+							<div class="additional-info__section">
+								<h2 class="additional-info__title">SEO-заголовок</h2>
+								<p class="additional-info__text">Правомочен микрохроматический интервал традиционно трансформирует комплексный голос, что несомненно приведет нас к истине вектор переворачивает аккорд. Скачок функции, как бы это ни казалось парадоксальным, начинает голос наибольшее и наименьшее значения функции вызывает ряд тейлора. Сумма ряда концентрирует миксолидийский нонаккорд, что и требовалось доказать.</p>
+							</div>
+							<div class="additional-info__section">
+								<h2 class="additional-info__title">Доставка товара</h2>
+								<p class="additional-info__text">Правомочен микрохроматический интервал традиционно трансформирует комплексный голос, что несомненно приведет нас к истине вектор переворачивает аккорд. Скачок функции, как бы это ни казалось парадоксальным, начинает голос наибольшее и наименьшее значения функции вызывает ряд тейлора. Сумма ряда концентрирует миксолидийский нонаккорд, что и требовалось доказать. Скачок функции, как бы это ни казалось парадоксальным, начинает голос наибольшее и наименьшее значения функции  вызывает ряд тейлора. Сумма ряда концентрирует миксолидийский нонаккорд, что и требовалось доказать.</p>
+							</div>
+							<div class="additional-info__section">
+								<h2 class="additional-info__title">Оплата товара</h2>
+								<p class="additional-info__text">Правомочен микрохроматический интервал традиционно трансформирует комплексный голос, что несомненно приведет нас к истине вектор переворачивает аккорд. Скачок функции, как бы это ни казалось парадоксальным, начинает голос наибольшее и наименьшее значения функции вызывает ряд тейлора. Сумма ряда концентрирует миксолидийский нонаккорд, что и требовалось доказать. Скачок функции, как бы это ни казалось парадоксальным, начинает голос наибольшее и наименьшее значения функции  вызывает ряд тейлора. Сумма ряда концентрирует миксолидийский нонаккорд, что и требовалось доказать.</p>
+							</div>
+						</div>
+					</section>
+				</div>
+				<span class='underline'></span>
+			</main>
+
+			<!-- Footer -->
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__top">
+						<div class="footer__logo">
+							<img src="./assets/logo.svg" alt="Natura Logo">
+						</div>
+						<div class="footer__columns">
+							<div class="footer__column">
+								<div class="footer__column-item">
+									<h4 class="footer__title">О компании</h4>
+									<ul class="footer__list">
+										<li><a href="#">О Компании</a></li>
+										<li><a href="#">Новости</a></li>
+										<li><a href="#">Акции и скидки</a></li>
+										<li><a href="#">Гарантии</a></li>
+										<li><a href="#">Розничная сеть</a></li>
+										<li><a href="#">О бренде</a></li>
+										<li><a href="#">Отзывы</a></li>
+										<li><a href="#">Контакты</a></li>
+									</ul>
+								</div>
+								<div class="footer__column-item">
+									<h4 class="footer__title">Помощь</h4>
+									<ul class="footer__list">
+										<li><a href="#">Избранное</a></li>
+										<li><a href="#">Личный кабинет</a></li>
+										<li><a href="#">FAQ</a></li>
+										<li><a href="#">Оптовикам</a></li>
+										<li><a href="#">Партнеры</a></li>
+										<li><a href="#">Как купить</a></li>
+										<li><a href="#">Доставка и оплата</a></li>
+										<li><a href="#">Условия покупки</a></li>
+									</ul>
+								</div>
+								<div class="footer__column-item">
+									<h4 class="footer__title">Каталог</h4>
+									<ul class="footer__list">
+										<li><a href="#">Гостинная</a></li>
+										<li><a href="#">Кухня</a></li>
+										<li><a href="#">Детская</a></li>
+										<li><a href="#">Ванная</a></li>
+										<li><a href="#">Спальня</a></li>
+										<li><a href="#">Новинки</a></li>
+										<li><a href="#">Lookbook</a></li>
+										<li><a href="#">Распродажа</a></li>
+										<li><a href="#">Коллекции</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="footer__contacts">
+								<h4 class="footer__title">Контакты</h4>
+								<ul class="footer__list">
+									<li class='footer__contacts-town'>
+										Иваново
+										<a class='footer__contacts-tel' href='tel:+74932111111'>+7 (4932) 11-11-11</a>
+									</li>
+									<li class='footer__contacts-town'>
+										Москва
+										<a class='footer__contacts-tel' href='tel:+74951111111'>+7 (495) 111-11-11</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<div class="footer__bottom-item">
+							<p>«Natura» — Торговая марка компании<br>Все права защищены</p>
+						</div>
+						<div class="footer__bottom-item">
+							<div class="footer__socials">
+								<a href="#"><img src="./assets/socials/vk.svg" alt="VK"></a>
+								<a href="#"><img src="./assets/socials/instagram.svg" alt="Instagram"></a>
+								<a href="#"><img src="./assets/socials/ok.svg" alt="Одноклассники"></a>
+							</div>
+						</div>
+						<div class="footer__bottom-item">
+							<p>Россия, 153032, г. Иваново,<br>ул. Пушкина, д. 20 стр. 90</p>
+						</div>
+					</div>
+				</div>
+
+		</footer>
+
+</body>
+</html>
