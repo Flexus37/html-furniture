@@ -1,0 +1,99 @@
+@import './reset.scss';
+@import './vars';
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-size: 1.4rem;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings: "slnt" 0;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: #FFF;
+	overflow-x: hidden;
+}
+
+section {
+	margin-bottom: 8rem;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	padding: 0;
+}
+
+input {
+	margin: 0;
+}
+
+h1 {
+	font-size: 4rem;
+	font-weight: bold;
+	color: #2B2B2B;
+	margin-top: 0;
+}
+
+.container {
+	max-width: 140rem;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+/* Main */
+.main__wrapper {
+	display: grid;
+	grid-template-columns: 19.4rem 1fr;
+	gap: 3.8rem;
+}
+
+
+@import './components/header.scss';
+@import './components/sidebar.scss';
+@import './components/overlay.scss';
+@import './components/filters.scss';
+@import './components/breadcrumbs.scss';
+@import './components/products.scss';
+@import './components/pagination.scss';
+@import './components/additional-info.scss';
+@import './components/footer.scss';
+
+
+@media (max-width: $size-lg) {
+	.main__wrapper {
+		grid-template-columns: 15rem 1fr;
+		gap: 2.5rem;
+	}
+}
+
+@media (max-width: $size-sm) {
+  .main__wrapper {
+		display: block;
+		gap: 0;
+	}
+}
+
+@media (max-width: $size-2xs) {
+  .main__wrapper {
+		display: block;
+		gap: 0;
+	}
+
+	section {
+		margin-bottom: 6rem;
+	}
+}

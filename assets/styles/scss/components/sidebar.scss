@@ -1,0 +1,123 @@
+@import '../vars';
+
+.sidebar {
+	display: none;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  transition: right 0.3s ease-in-out, box-shadow .3s ease-in-out;
+
+  flex-direction: column;
+  padding: 6rem 2rem 2rem;
+  z-index: 1000;
+
+	h2 {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 2.5rem;
+		font-size: 2.4rem;
+	}
+
+	&__links {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		row-gap: 2.5rem;
+		list-style: none;
+
+		font-size: 2rem;
+
+		li {
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+			cursor: pointer;
+			text-transform: uppercase;
+
+			a {
+				text-decoration: none;
+				color: #2B2B2B;
+
+				transition: color .1s ease-in-out;
+			}
+
+			&:hover a {
+				color: #FDBD4E;
+			}
+		}
+	}
+
+	&.open {
+		right: 0;
+		box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+	}
+
+	&__close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2.5rem;
+		width: auto;
+		height: 2rem;
+		background: transparent;
+		border: none;
+		cursor: pointer;
+		padding-right: 2rem;
+
+		font-weight: bold;
+    color: #2B2B2B;
+    text-align: center;
+
+		&::before, &::after {
+			content: '';
+			position: absolute;
+			width: 1.5rem;
+			height: 0.2rem;
+			background-color: #2B2B2B;
+
+			top: 45%;
+			right: 0;
+		}
+
+		&::before {
+			transform: rotate(45deg);
+		}
+
+		&::after {
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+/* Стили для затемняющего фона */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+/* Активный класс для отображения overlay */
+.overlay.active {
+  display: block;
+}
+
+/* Отключение прокрутки страницы */
+body.no-scroll {
+  overflow: hidden;
+}
+
+
+@media (max-width: $size-lg) {
+	.sidebar {
+		display: flex;
+	}
+}
